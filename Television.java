@@ -9,4 +9,15 @@ private boolean powerOn;
 private int channel;
 private int volume;
 
+// This constructors allows the client to provide a maufacturer
+// and screen size for the Television instance being created.
+public Television(String brand, int size)
+{
+  MANUFACTURER = brand;
+  SCREEN_SIZE = size;
+  powerOn = false;
+  volume = 20;
+  channel = 2;
+}
+
 }
